@@ -1,0 +1,66 @@
+.navbar {
+    background-color: rgba(0, 0, 0, 0) !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.active {
+    font: normal normal medium 14px/18px Montserrat;
+    letter-spacing: -0.56px;
+    height: 18px;
+}
+
+.imagenFondo {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.itemsPie {
+    position: absolute;
+    bottom: 0;
+}
+
+#fondoBorroso {
+    backdrop-filter: blur(15px);
+    background-color: rgb(255 255 255 / 10%);
+}
+
+.itemPie {
+    margin: auto 0;
+    padding-left: 40px;
+    color: white;
+    font-size: 14px;
+}
+
+.titleItems {
+    width: 223px;
+    height: 27px;
+    text-align: left;
+    // font: normal normal 600 22px/27px Montserrat;
+    font-size: 22px;
+    font-weight: bolder;
+    letter-spacing: -0.88px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.containerVerPlanes {
+    font: normal normal medium 14px/16px Roboto;
+    letter-spacing: 1.25px;
+    color: white;
+    background-color: #47D9BF;
+    text-align: center;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.btnVerPlanes {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    color: white;
+    width: 100%;
+}
