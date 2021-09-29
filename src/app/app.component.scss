@@ -1,0 +1,20 @@
+.navbar {
+    background-color: rgba(0, 0, 0, 0) !important;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.contentNavbar {
+    padding: 30px 50px 0 50px;
+}
+
+.nav-item {
+    padding: 0 15px;
+}
+
+.active {
+    font: normal normal medium 14px/18px Montserrat;
+    letter-spacing: -0.56px;
+    height: 18px;
+}
