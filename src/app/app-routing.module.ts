@@ -11,6 +11,10 @@ export const routes: Routes = [
       {
         path: 'auth',
         loadChildren: () => import('./secciones/login/login.module').then(m => m.LoginModule)
+      },
+      {
+        path: 'plans',
+        loadChildren: () => import('./secciones/planes/planes.module').then(m => m.PlaneModule)
       }
     ]
   }

@@ -1,0 +1,68 @@
+.containerPadre {
+    color: white;
+    height: 400px;
+    margin-top: 8%;
+}
+
+.elegi {
+    font-size: 80px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+.tuPlan {
+    font-size: 80px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #FFCB1E;
+    position: relative;
+    right: -10%;
+    top: -10%;
+}
+
+.contactanos {
+    margin-top: 15%;
+    letter-spacing: 0.7px;
+}
+
+.containerPlans {
+    backdrop-filter: blur(15px);
+    background-color: rgb(255 255 255 / 10%);
+    height: 100%;
+}
+
+.containerPlanIndividual {
+    max-width: 230px;
+    padding: 0 10%;
+}
+
+.logoPlanes {
+    background-color: white;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+}
+
+.precioContent {
+    margin-top: 20%;
+    color: #FFCB1E;
+    font-weight: bolder;
+
+    .precioLanzamiento {
+        background-color: #FFCB1E;
+        color: black;
+        padding-left: 10px;
+    }
+
+    .precio {
+        font-size: 30px;
+    }
+}
+
+.containerPlanIndividual:hover {
+    transform: scale(1.15);
+    background-color: #00A1D9;
+    padding-top: 7%;
+    padding-bottom: 7%;
+}

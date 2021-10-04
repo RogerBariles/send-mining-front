@@ -1,0 +1,21 @@
+<svg id="PlayStore-Bt" xmlns="http://www.w3.org/2000/svg" width="217" height="70" viewBox="0 0 217 70">
+  <rect id="Rectángulo_74" data-name="Rectángulo 74" width="217" height="70" rx="35" fill="#212121"/>
+  <g id="playstore" transform="translate(30.115 21.641)">
+    <g id="Grupo_83" data-name="Grupo 83" transform="translate(0 0.001)">
+      <path id="Trazado_14" data-name="Trazado 14" d="M65.558,9.252C62.428,7.5,57.405,4.691,49.614.329A1.879,1.879,0,0,0,47.962.113L61.33,13.481Z" transform="translate(-46.677 -0.012)" fill="#32bbff"/>
+      <path id="Trazado_15" data-name="Trazado 15" d="M24.834,1.93a1.921,1.921,0,0,0-.284.121,1.88,1.88,0,0,0-1,1.671v23.15a1.88,1.88,0,0,0,1,1.671,1.945,1.945,0,0,0,.284.122L38.2,15.3Z" transform="translate(-23.549 -1.829)" fill="#32bbff"/>
+      <path id="Trazado_16" data-name="Trazado 16" d="M61.324,255.98,47.956,269.348a1.859,1.859,0,0,0,1.652-.216c7.556-4.231,12.522-7.009,15.688-8.774l.26-.146Z" transform="translate(-46.672 -242.511)" fill="#32bbff"/>
+    </g>
+    <path id="Trazado_17" data-name="Trazado 17" d="M23.549,255.98v11.575a1.88,1.88,0,0,0,1,1.671,1.951,1.951,0,0,0,.284.122L38.2,255.98Z" transform="translate(-23.549 -242.511)" fill="#2c9fd9"/>
+    <path id="Trazado_18" data-name="Trazado 18" d="M44.5.317A1.885,1.885,0,0,0,42.561.223L56.01,13.672l4.431-4.431C57.311,7.491,52.288,4.68,44.5.317Z" transform="translate(-41.561 0)" fill="#29cc5e"/>
+    <path id="Trazado_19" data-name="Trazado 19" d="M56.01,252.126,42.561,265.575a1.872,1.872,0,0,0,1.936-.094c7.556-4.231,12.522-7.009,15.688-8.774l.26-.146Z" transform="translate(-41.561 -238.86)" fill="#d93f21"/>
+    <path id="Trazado_20" data-name="Trazado 20" d="M304.519,177.231a1.875,1.875,0,0,0-.965-1.648s-1.2-.669-4.877-2.726l-4.374,4.374,4.378,4.378c3.637-2.042,4.872-2.73,4.872-2.73A1.875,1.875,0,0,0,304.519,177.231Z" transform="translate(-280.056 -163.762)" fill="#ffd500"/>
+    <path id="Trazado_21" data-name="Trazado 21" d="M303.554,257.628a1.875,1.875,0,0,0,.965-1.648H294.3l4.378,4.378C302.318,258.316,303.554,257.628,303.554,257.628Z" transform="translate(-280.056 -242.511)" fill="#fa0"/>
+  </g>
+  <g id="Elipse_7" data-name="Elipse 7" transform="translate(14 8)" fill="none" stroke="#fff" stroke-width="1">
+    <ellipse cx="26.5" cy="27" rx="26.5" ry="27" stroke="none"/>
+    <ellipse cx="26.5" cy="27" rx="26" ry="26.5" fill="none"/>
+  </g>
+  <text id="Disponible_en" data-name="Disponible en" transform="translate(75 27)" fill="#fff" font-size="9" font-family="Montserrat-Light, Montserrat" font-weight="300"><tspan x="0" y="0">Disponible en</tspan></text>
+  <text id="GOOGLE_PLAY" data-name="GOOGLE PLAY" transform="translate(74 45)" fill="#fff" font-size="16" font-family="Montserrat-SemiBold, Montserrat" font-weight="600" letter-spacing="-0.02em"><tspan x="0" y="0">GOOGLE PLAY</tspan></text>
+</svg>

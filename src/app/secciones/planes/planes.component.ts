@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UpdateImageFondo } from 'src/app/services/update-image-fondo.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-planes',
@@ -7,7 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlanesComponent implements OnInit {
 
-  constructor() { }
+  baseImage: string = 'planes/fondo-planes.png';
+
+  constructor(
+    private updateImageFondo: UpdateImageFondo
+  ) {
+    this.updateImageFondo.subject.next(this.baseImage);
+  }
 
   ngOnInit(): void {
   }
