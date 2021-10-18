@@ -9,11 +9,11 @@ const app = express();
 app.use(sslRedirect());
 
 // Serve only the static files form the dist directory
-app.use(express.static('./dist'));
+app.use(express.static('./dist/send-mining'));
 
 app.get('/*', function(req,res) {
 
-res.sendFile(path.join(__dirname,'/dist/index.html'));
+res.sendFile(path.join(__dirname,'/dist/send-mining/index.html'));
 });
 
 // Start t< he app by listening on the default Heroku port
