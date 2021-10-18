@@ -5,6 +5,15 @@
     z-index: 1000;
 }
 
+.containerNavbarDescktop {
+    padding-top: 30px;
+    position: relative;
+}
+
+.containerNavbarMobile {
+    display: none;
+}
+
 .contentNavbar {
     padding: 30px 50px 0 50px;
 }
@@ -17,8 +26,27 @@
     padding: 0 15px;
 }
 
-.active {
+.nav-link {
     font: normal normal medium 14px/18px Montserrat;
     letter-spacing: -0.56px;
-    height: 18px;
+    color: white;
+    padding: 0;
+    padding-top: 20px;
 }
+
+@media (max-width:570px) {
+    .containerNavbarDescktop {
+        display: none;
+    }
+
+    .containerNavbarMobile {
+        display: block;
+        position: relative;
+        padding-top: 30px;
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    
+}
+

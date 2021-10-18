@@ -7,8 +7,8 @@ export const LoginRoutes: Routes = [
         path: '',
         component: LoginComponent
     },
-    {
-        path: 'create-user',
-        component: CrearUsuarioComponent
-    }
+    // {
+    //     path: 'create-user',
+    //     component: CrearUsuarioComponent
+    // }
 ];

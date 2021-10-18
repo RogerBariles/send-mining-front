@@ -18,23 +18,52 @@
 
 <div class="portada">
 
-    <div class="container-fluid itemsPie">
+    <div class="isDesktop container-fluid itemsPie">
         <div id="fondoBorroso" class="row align-items-end">
-            <div class="col itemPieLeft">
+            <div class="col-12 col-md-4 itemPieLeft">
                 <div class="titleItems">
                     Miner&iacute; en la nube<br>
                 </div>
                 Aument&aacute; tus criptoactivos sin invertir en<br>
                 infraestructura ni conocimientos previos.
             </div>
-            <div class="col itemPie">
+            <div class="col-12 col-md-4 itemPie">
                 <div class="titleItems">
                     R&aacute;pido, f&aacute;cil y seguro
                 </div>
                 Somos una empresa pionera en la mineria cripto,<br>
                 en sociedad con el equipo de Universal Coins.
             </div>
-            <div class="col containerVerPlanes">
+            <div class="col-12 col-md-4 containerVerPlanes">
+                <button class="btnVerPlanes" (click)="redirectPlans()">
+                    VER PLANES <b style="font-size: 35px;"> &#8594; </b>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MOBILE -->
+    <div class="isMobile container-fluid itemsPie">
+        <div id="fondoBorroso" class="row align-items-end">
+            <div class="col-12 ">
+                <div class="itemCarrousel">
+                    <div class="titleItems">
+                        Miner&iacute; en la nube<br>
+                    </div>
+                    Aument&aacute; tus criptoactivos sin invertir en<br>
+                    infraestructura ni conocimientos previos.
+                </div>
+
+                <!-- <div>
+                    <div class="titleItems">
+                        R&aacute;pido, f&aacute;cil y seguro
+                    </div>
+                    Somos una empresa pionera en la mineria cripto,<br>
+                    en sociedad con el equipo de Universal Coins.
+                </div> -->
+            </div>
+
+            <div class="col-12 containerVerPlanes">
                 <button class="btnVerPlanes" (click)="redirectPlans()">
                     VER PLANES <b style="font-size: 35px;"> &#8594; </b>
                 </button>

@@ -3,6 +3,14 @@
     bottom: 0;
 }
 
+.isDesktop {
+    display: flexbox;
+}
+
+.isMobile {
+    display: none;
+}
+
 #fondoBorroso {
     backdrop-filter: blur(15px);
     background-color: rgb(255 255 255 / 10%);
@@ -59,7 +67,6 @@
     z-index: 1000;
     // font-family: 'Montserrat';
     font: normal normal bolder 72px/88px 'Montserrat';
-    
 }
 
 .titulo {
@@ -88,5 +95,60 @@
 
     .itemPieLeft {
         padding-left: 80px;
+    }
+}
+
+// IS MOBILE
+@media (max-width: 600px) {
+    .isDesktop {
+        display: none;
+    }
+
+    .isMobile {
+        display: inline;
+    }
+    
+
+    .containerTextCenter {
+        margin-top: 5%;
+
+        .fs-100 {
+            font-size: 60px;
+        }
+
+        .containerMining {
+            margin-top: -40px;
+        }
+        
+        .containerSubtitulo {
+            margin-top: -15px;
+            font-size: 13px;
+            left: 53%;
+        }
+    }
+
+    .containerVerPlanes {
+        height: 100px;
+    }
+
+    .itemCarrousel {
+        padding: 20px 0;
+        text-align: center;
+        margin: auto 0;
+
+        .titleItems {
+            padding-left: 10%;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 370px) {
+    .containerTextCenter {
+        margin-top: 0%;
+    }
+
+    .titulo {
+        margin-left: 2%;
     }
 }
