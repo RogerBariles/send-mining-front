@@ -6,12 +6,18 @@
 #fondoBorroso {
     backdrop-filter: blur(15px);
     background-color: rgb(255 255 255 / 10%);
+    color: white;
 }
 
 .itemPie {
     margin: auto 0;
     padding-left: 40px;
-    color: white;
+    font-size: 14px;
+}
+
+.itemPieLeft {
+    margin: auto 0;
+    padding-left: 140px;
     font-size: 14px;
 }
 
@@ -44,4 +50,43 @@
     border-color: rgba(0, 0, 0, 0);
     color: white;
     width: 100%;
+}
+
+.containerTextCenter {
+    margin-top: 10%;
+    color: white;
+    position: relative;
+    z-index: 1000;
+    // font-family: 'Montserrat';
+    font: normal normal bolder 72px/88px 'Montserrat';
+    
+}
+
+.titulo {
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.containerMining {
+    margin-top: -60px;
+    color: #FFCB1E;
+}
+
+.containerSubtitulo {
+    font-size: 19px;
+    position: relative;
+    left: 63%;
+    font-weight: bolder;
+    margin-top: -27px;
+}
+
+@media (max-width: 1220px) {
+    .titulo {
+        margin-top: 10%;
+    }
+
+    .itemPieLeft {
+        padding-left: 80px;
+    }
 }
