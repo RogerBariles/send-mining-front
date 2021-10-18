@@ -1,8 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 .imagenFondo {
-    position: absolute;
     height: 100vh;
     width: 100%;
+    background-position-x: -180px;
+    background-size: cover;
 }
 
 .containerPadre {
