@@ -3,31 +3,6 @@
     margin-top: 3%;
 }
 
-.titleLogin {
-    color: white;
-    font-weight: 400;
-    font-size: 40px;
-    letter-spacing: -1.36px;
-    padding-top: 5%;
-    text-align: center;
-    height: 42px;
-}
-
-.input-group {
-    max-width: 400px;
-}
-
-.inputclass {
-    background-color: #2f2f2f;
-    padding: 20px 20px;
-    border: none;
-    color: white;
-}
-
-.containerInputs {
-    margin-top: 15%;
-}
-
 .containerLogin {
     a {
         text-decoration: none;
@@ -62,6 +37,41 @@
     }
 }
 
+.titleLogin {
+    color: white;
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: -1.36px;
+    padding-top: 5%;
+    text-align: center;
+    height: 42px;
+}
+
+.subTitle {
+    color: white;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding-top: 9%;
+    text-align: center;
+}
+
+.input-group {
+    max-width: 400px;
+}
+
+.inputclass {
+    background-color: #2f2f2f;
+    padding: 20px 20px;
+    border: none;
+    color: white;
+}
+
+.containerInputs {
+    margin-top: 10%;
+}
+
+
+
 .containerBtn {
     text-align: center;
     margin-top: 30px;
@@ -75,4 +85,19 @@
         color: white;
         font-size: 13px;
     }
+}
+
+@media (max-width: 500px) {
+    .containerPadre {
+        max-width: 350px;
+    }
+
+    .inputclass {
+        height: 50px;
+    }
+
+    .titleLogin {
+        font-size: 35px;
+    }
+
 }
