@@ -1,13 +1,22 @@
+.isDesktop {
+    display: flexbox;
+}
+
+.isMobile {
+    display: none;
+}
+
 .containerPadre {
     color: white;
     height: 400px;
-    margin-top: 8%;
+    margin-top: 10%;
 }
 
 .elegi {
     font-size: 80px;
     font-family: 'Montserrat';
     font-weight: bold;
+    max-width: 100px;
 }
 
 .tuPlan {
@@ -18,6 +27,7 @@
     position: relative;
     right: -10%;
     top: -10%;
+    max-width: 300px;
 }
 
 .contactanos {
@@ -34,6 +44,7 @@
 .containerPlanIndividual {
     max-width: 230px;
     padding: 0 10%;
+    margin-top: -60px;
 }
 
 .logoPlanes {
@@ -61,8 +72,59 @@
 }
 
 .containerPlanIndividual:hover {
+
+    .logoPlanes {
+        background-color: #00A1D9;
+        width: 75px;
+        height: 75px;
+        margin-bottom: 10px;
+    }
+
     transform: scale(1.15);
-    background-color: #00A1D9;
-    padding-top: 7%;
-    padding-bottom: 7%;
+    backdrop-filter: blur(15px);
+    box-shadow: inset 0 0 5px 7px #00A1D9;
+    border-radius: 10px;
+    // height: 0%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+// IS MOBILE
+@media (max-width: 600px) {
+    .isDesktop {
+        display: none;
+    }
+
+    .isMobile {
+        display: inline;
+    }
+
+    .containerTitulos {
+        max-width: 600px;
+
+        .elegi {
+            font-size: 60px;
+        }
+    
+        .tuPlan {
+            font-size: 60px;
+        }
+    }
+
+    .centerTitulo {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .containerPlanIndividual {
+        max-width: 270px;
+        margin-top: 0;
+    }
+
+    .containerPlans {
+        margin-top: 20px;
+        padding: 10px 0;
+    }
+    
 }

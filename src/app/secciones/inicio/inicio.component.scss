@@ -127,19 +127,21 @@
         }
     }
 
-    .containerVerPlanes {
-        height: 100px;
-    }
 
     .itemCarrousel {
         padding: 20px 0;
         text-align: center;
         margin: auto 0;
+        font-size: 15px;
 
         .titleItems {
-            padding-left: 10%;
+            text-align: center;
             width: 100%;
         }
+    }
+
+    .btnVerPlanes {
+        font-size: 25px;
     }
 }
 
