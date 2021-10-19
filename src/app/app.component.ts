@@ -1,5 +1,4 @@
 import { AfterContentChecked, Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
-import { Router } from '@angular/router';
 import { UpdateImageFondo } from './services/update-image-fondo.service';
 
 @Component({

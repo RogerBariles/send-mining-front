@@ -100,20 +100,24 @@
         display: inline;
     }
 
+    .containerPadre {
+        margin-top: 5%;
+    }
+
     .containerTitulos {
         max-width: 600px;
 
         .elegi {
-            font-size: 60px;
+            font-size: 50px;
         }
     
         .tuPlan {
-            font-size: 60px;
+            font-size: 50px;
         }
     }
 
     .centerTitulo {
-        max-width: 300px;
+        max-width: 250px;
         margin: 0 auto;
     }
 
