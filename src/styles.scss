@@ -2,7 +2,6 @@
 .imagenFondo {
     height: 100vh;
     width: 100%;
-    background-position-x: -180px;
     background-size: cover;
 }
 
@@ -13,4 +12,11 @@
 
 .fs-100 {
     font-size: 100px;
+}
+
+@media (max-width: 600px) {
+    .imagenFondo {
+        background-position-x: -180px;
+    }
+    
 }
