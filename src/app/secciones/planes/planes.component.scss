@@ -30,6 +30,10 @@
     max-width: 300px;
 }
 
+.textPieElegiPlan {
+    font-size: 19px;
+}
+
 .contactanos {
     margin-top: 15%;
     letter-spacing: 0.7px;
@@ -42,9 +46,13 @@
 }
 
 .containerPlanIndividual {
-    max-width: 230px;
+    max-width: 240px;
     padding: 0 10%;
     margin-top: -60px;
+
+    .imagePlan {
+        width: 150px;
+    }
 }
 
 .logoPlanes {
@@ -71,8 +79,57 @@
     }
 }
 
+// IS TABLET
+@media (max-width: 1300px) {
+    .elegi {
+        font-size: 60px;
+    }
 
-@media (min-width: 600px) {
+    .tuPlan {
+        font-size: 60px;
+    }
+
+    .textPieElegiPlan {
+        font-size: 15px;
+    }
+
+    .containerPlanIndividual {
+
+        .logoPlanes {
+            width: 50px;
+            height: 50px;
+        }
+
+        .imagenFoote {
+            width: 33px;
+        }
+
+        .imagePlan {
+            width: 125px;
+        }
+    }
+
+    .precioContent {
+    
+        .precioLanzamiento {
+            font-size: 11px;
+        }
+    
+        .precio {
+            font-size: 22px;
+        }
+    }
+
+    .containerPlanIndividual:hover {
+    
+        transform: scale(1.05);
+        backdrop-filter: blur(15px);
+        padding: 30px;
+    }
+
+}
+
+@media (min-width: 1200px) {
     // EFECTO SOLO DESKTOP
     .containerPlanIndividual:hover {
     
@@ -127,11 +184,37 @@
     .containerPlanIndividual {
         max-width: 270px;
         margin-top: 0;
+
+        .imagenFoote {
+            width: 53px;
+        }
+
+        .logoPlanes {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
     }
 
     .containerPlans {
-        margin-top: 20px;
-        padding: 10px 0;
+        margin-top: 50px;
+        max-height: 360px;        
+    }
+
+    .precioContent {
+    
+        .precioLanzamiento {
+            font-size: 15px;
+        }
+    }
+
+    .containerPlanIndividual {
+        pointer-events: none;
+    }
+
+    #carouselExampleControls {
+        position: relative;
+        top: -35px;
     }
     
 }
