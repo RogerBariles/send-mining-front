@@ -34,6 +34,10 @@
     padding-top: 20px;
 }
 
+.imagenFondo {
+    height: 100vh !important;
+}
+
 @media (max-width:570px) {
     .containerNavbarDescktop {
         display: none;
@@ -41,12 +45,15 @@
 
     .containerNavbarMobile {
         display: block;
-        position: relative;
-        padding-top: 30px;
+        // position: relative;
+        padding-top: 25px;
         font-size: 15px;
         text-align: center;
     }
     
+    .imagenFondo {
+        // height: 120vh !important;
+    }
     
 }
 

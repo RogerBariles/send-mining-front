@@ -15,7 +15,6 @@
 
     color: white;
     text-align: left;
-    height: 25px;
     font-size: 15px;
     max-width: 400px;
 
@@ -90,7 +89,7 @@
 @media (max-width: 500px) {
     .containerPadre {
         padding-top: 55px;
-        max-width: 340px;
+        max-width: 300px;
     }
 
     .inputclass {
@@ -98,7 +97,7 @@
     }
 
     .titleLogin {
-        font-size: 35px;
+        font-size: 30px;
     }
 
 }
