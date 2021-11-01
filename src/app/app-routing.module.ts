@@ -17,5 +17,14 @@ export const routes: Routes = [
         loadChildren: () => import('./secciones/planes/planes.module').then(m => m.PlaneModule)
       }
     ]
+  },
+  {
+    path: 'profile',
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('./secciones/mi-perfil/mi-perfil.module').then(m => m.MiPerfilModule)
+      }
+    ]
   }
 ];

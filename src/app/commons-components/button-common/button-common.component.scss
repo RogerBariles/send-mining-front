@@ -1,0 +1,24 @@
+.containerBtn {
+    text-align: center;
+    .btn {
+        padding-left: 30px;
+        padding-right: 30px;
+        letter-spacing: 1.25px;
+        color: white;
+        text-align: center;
+        font-size: 14px;
+        background-color: #47D9BF;
+        border-radius: 20px;
+    }
+
+    .btn-invert {
+        padding-left: 30px;
+        padding-right: 30px;
+        letter-spacing: 1.25px;
+        background-color: white;
+        text-align: center;
+        font-size: 14px;
+        color: #47D9BF;
+        border-radius: 20px;
+    }
+}

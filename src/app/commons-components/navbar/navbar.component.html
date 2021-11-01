@@ -1,0 +1,38 @@
+<div class="container-fluid containerNavbarDescktop">
+    <div class="row">
+        <div class="col-6 col-md-8" style="padding-left: 100px; padding-bottom: 15px;">
+            <img src="../../../assets/images/logos/logo_send_min.svg" width="45">
+        </div>
+
+        <div class ="col-2 col-md-1 p-0" *ngFor="let unItem of props">
+            <a class="nav-link active text-center" [routerLink]="[unItem.route]">{{unItem.text}}</a>
+        </div>
+    </div>
+
+</div>
+
+<div class="container-fluid containerNavbarMobile">
+    <div class="row">
+        <div class="col">
+            <img src="../../../assets/images/logos/logo_send_min.svg" width="40">
+        </div>
+
+        <div *ngFor="let unItem of props">
+            <div [class]="unItem.class">
+                <a class="nav-link active" [routerLink]="[unItem.route]">{{unItem.text}}</a>
+            </div>
+        </div>
+
+        <!-- <div class="col p-0">
+            <a class="nav-link active" [routerLink]="['/']">Home</a>
+        </div>
+        <div class="col-4 p-0">
+            <a class="nav-link active" href="https://www.universalcoins.net/" target="_blank"
+                        rel="noopener noreferrer">Universal Coins</a>
+        </div>
+        <div class="col p-0">
+            <a class="nav-link active" [routerLink]="['/auth']">Log In</a>
+        </div> -->
+    </div>
+
+</div>

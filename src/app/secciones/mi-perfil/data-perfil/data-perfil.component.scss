@@ -1,0 +1,138 @@
+.contentPadre {
+    background-color: #F6F6F6;
+}
+
+.contentDataPerfil {
+    background-color: white;
+    max-width: 1000px;
+    margin-top: 20px;
+}
+
+.containerBalancesGanancias {
+    max-width: 1000px;
+    margin-top: 40px;
+
+    .titlesData {
+        font-size: 20px;
+    }
+}
+
+.containerMisBalances {
+    background-color: white;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+
+.containerHistorialGanancias {
+    background-color: white;
+    padding: 27px 55px;
+}
+
+.modal-dialog {
+    position: absolute;
+    right: 0px;
+    margin: 0;
+    width: 600px;
+    
+    .modal-header {
+        border-bottom: none;
+    }
+
+    .modal-content {
+        height: 100vh !important;
+    }
+
+    .modal-title {
+        color: #37414080;
+        font-size: 18px;
+    }
+
+    .modal-body {
+
+        font-family: 'Montserrat';
+        .btn-group {
+            font-weight: bold;
+        }
+
+        .containerTitle{
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .btnDesplegable {
+            background-color: white;
+            border-color: white;
+            color: black;
+        }
+
+        .containerFooter {
+            position: absolute;
+            bottom: 80px;
+            align-items: center;
+            right: 30%;
+        }
+
+        .containerDataWallet {
+            background-color: #F6F6F6;
+        }
+
+        .conteinerSelectCripto {
+            margin: 55px auto;
+        }
+
+        .textBitcoin {
+            margin: auto 15px;
+            font-weight: bolder;
+        }
+    }
+}
+
+
+
+
+// IS MOBILE
+@media (max-width:500px) {
+    
+    .modal-dialog {
+        width: 320px;
+
+        .modal-body {
+            .containerTitle {
+                font-size: 18px;
+            }
+
+            .containerFooter {
+                right: 25%;
+                bottom: 40px;
+            }
+            
+            .conteinerSelectCripto {
+                margin: 25px auto;
+            }
+
+            .containerInput {
+                padding-bottom: 10px !important;
+            }
+
+            .containerDataWallet {
+                padding: 15px !important;
+
+                p {
+                    font-size: 13px;
+                }
+
+                h3 {
+                    font-size: 17px;
+                }
+
+                .container {
+                    h5 {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+        
+    }
+}

@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { LoginRoutes } from './login.routing';
-import { CrearUsuarioComponent } from './crear-usuario/crear-usuario.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login.component';
+import { LoginRoutes } from './login.routing';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CrearUsuarioComponent } from './crear-usuario/crear-usuario.component';
 
 @NgModule({
     imports: [
-        FormsModule,
+        // RouterModule.forChild(LoginRoutes),
         ReactiveFormsModule,
-        RouterModule.forChild(LoginRoutes)
+        FormsModule
     ],
     exports: [],
     declarations: [
-        LoginComponent,
+        // LoginComponent,
         CrearUsuarioComponent
     ],
     providers: [],
