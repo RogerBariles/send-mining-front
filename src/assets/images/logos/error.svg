@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="162" height="115" viewBox="0 0 162 115">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_112" data-name="Rectángulo 112" width="162" height="115" rx="6" transform="translate(0.258 0)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Vector-error" transform="translate(-2874.258 -8583)">
+    <rect id="Rectángulo_111" data-name="Rectángulo 111" width="162" height="115" rx="6" transform="translate(2874.258 8583)" fill="#eee"/>
+    <g id="Enmascarar_grupo_11" data-name="Enmascarar grupo 11" transform="translate(2874 8583)" opacity="0.43" clip-path="url(#clip-path)">
+      <ellipse id="Elipse_19" data-name="Elipse 19" cx="94" cy="84.5" rx="94" ry="84.5" transform="translate(-45.742 -90)" fill="#fff"/>
+    </g>
+    <circle id="Elipse_13" data-name="Elipse 13" cx="13.5" cy="13.5" r="13.5" transform="translate(2903.258 8611)" fill="#dcdcdc"/>
+    <circle id="Elipse_18" data-name="Elipse 18" cx="13.5" cy="13.5" r="13.5" transform="translate(2978.258 8611)" fill="#dcdcdc"/>
+    <circle id="Elipse_14" data-name="Elipse 14" cx="6" cy="6" r="6" transform="translate(2907.258 8615)" fill="#fff"/>
+    <circle id="Elipse_16" data-name="Elipse 16" cx="6" cy="6" r="6" transform="translate(2982.258 8615)" fill="#fff"/>
+    <circle id="Elipse_15" data-name="Elipse 15" cx="2.5" cy="2.5" r="2.5" transform="translate(2917.258 8626)" fill="#fff"/>
+    <circle id="Elipse_17" data-name="Elipse 17" cx="2.5" cy="2.5" r="2.5" transform="translate(2992.258 8626)" fill="#fff"/>
+    <path id="Trazado_33" data-name="Trazado 33" d="M2944,8702.2c7.68-7.058,17.755-13.176,29.647-13.176s19.563,2.824,31.793,13.176" transform="translate(-21.796 -33.525)" fill="none" stroke="#dcdcdc" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+  </g>
+</svg>

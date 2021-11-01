@@ -1,42 +1,4 @@
 <div #contentImage class="container-fluid p-0 imagenFondo ">
-
-    <div class="container-fluid containerNavbarDescktop">
-        <div class="row">
-            <div class="col-6 col-md-8" style="padding-left: 100px;">
-                <img src="../../../assets/images/logos/logo_send_min.svg" width="55">
-            </div>
-            <div class="col-2 col-md-1 p-0">
-                <a class="nav-link text-center" [routerLink]="['/']">Home</a>
-            </div>
-            <div class="col-2 col-md-1 p-0">
-                <a class="nav-link text-center" href="https://www.universalcoins.net/" target="_blank"
-                            rel="noopener noreferrer">Universal Coins</a>
-            </div>
-            <div class="col-2 col-md-1 p-0">
-                <a class="nav-link text-center" [routerLink]="['/auth']">Log In</a>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="container-fluid containerNavbarMobile">
-        <div class="row">
-            <div class="col">
-                <img src="../../../assets/images/logos/logo_send_min.svg" width="40">
-            </div>
-            <div class="col p-0">
-                <a class="nav-link active" [routerLink]="['/']">Home</a>
-            </div>
-            <div class="col-4 p-0">
-                <a class="nav-link active" href="https://www.universalcoins.net/" target="_blank"
-                            rel="noopener noreferrer">Universal Coins</a>
-            </div>
-            <div class="col p-0">
-                <a class="nav-link active" [routerLink]="['/auth']">Log In</a>
-            </div>
-        </div>
-
-    </div>
-
-    <router-outlet></router-outlet>
+    <navbar-common></navbar-common>
+    <router-outlet ></router-outlet>
 </div>

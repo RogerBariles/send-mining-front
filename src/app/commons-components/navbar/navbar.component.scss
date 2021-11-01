@@ -1,0 +1,55 @@
+.navbar {
+    background-color: rgba(0, 0, 0, 0) !important;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.containerNavbarDescktop {
+    padding-top: 30px;
+    position: relative;
+}
+
+.containerNavbarMobile {
+    display: none;
+}
+
+.contentNavbar {
+    padding: 30px 50px 0 50px;
+}
+
+.navbar-brand {
+    padding-left: 50px;
+}
+
+.nav-item {
+    padding: 0 15px;
+}
+
+.nav-link {
+    font: normal normal medium 14px/18px Montserrat;
+    letter-spacing: -0.56px;
+    color: white;
+    padding: 0;
+    padding-top: 20px;
+}
+
+@media (max-width:570px) {
+    .containerNavbarDescktop {
+        display: none;
+    }
+
+    .containerNavbarMobile {
+        display: block;
+        // position: relative;
+        padding-top: 25px;
+        font-size: 15px;
+        text-align: center;
+        background-color: white;
+    }
+    
+    .imagenFondo {
+        // height: 120vh !important;
+    }
+    
+}

@@ -1,0 +1,129 @@
+<div class="container-fluid contentPadre vh-100">
+
+    <div class="container contentDataPerfil">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 col-md-6">
+                            foto
+                        </div>
+                        <div class="col-6 col-md-6">
+                            <p class="m-0">Hola Roberto</p>
+                            <h3>$ 10.255</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 d-flex align-items-center">
+                <app-button-common [props]="propsBtn[0]"></app-button-common>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container containerBalancesGanancias">
+        <div class="row">
+            <div class="col-12 col-md-7">
+                <div>
+                    <div class="titlesData pb-4">Mis balances</div>
+
+                    <div *ngFor="let balance of misBalances" class="container containerMisBalances">
+                        <div>
+                            <p class="m-0 pt-2">{{balance.type}}</p>
+                            <h3>{{balance.monto}}</h3>
+                        </div>
+                        <div class="container ">
+                            <div class="row ">
+                                <app-button-common class="col p-0 d-flex justify-content-end"
+                                    *ngFor="let unButton of balance.buttons" [props]="unButton"></app-button-common>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-5">
+                <div>
+                    <div class="titlesData pb-4">Historial de Ganancias</div>
+
+                    <div class="container p-0">
+                        <div class="row">
+                            <div class="col containerHistorialGanancias text-center">
+                                <img src="../../../../assets/images/logos/error.svg" width="150">
+                                <h4 class="pt-2" style="color: #DCDCDC;">A&uacute;n no generaste ganancias</h4>
+                                <app-button-common class=" p-0" [props]="propsBtn[1]"></app-button-common>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Launch static backdrop modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header pt-3">
+                <h5 class="modal-title" id="staticBackdropLabel">Transferir</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body position-relative">
+                <div class="container">
+
+                    <div class="containerTitle">
+                        Transfer&iacute; tus criptos a tu<br>
+                        Universal Wallet para operar
+                    </div>
+
+                    <div class="container text-center conteinerSelectCripto">
+                        <div class="btn-group ">
+                            <h3 class="my-auto textBitcoin">BTC</h3>
+                            <button type="button"
+                                class="btn btn-secondary dropdown-toggle dropdown-toggle-split btnDesplegable"
+                                id="dropdownMenuReference" data-bs-toggle="dropdown" aria-expanded="false"
+                                data-bs-reference="parent">
+                                <span class="visually-hidden">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="container containerInput pb-5">
+
+                        <div class="form-outline">
+                            <label class="form-label" for="form12">Transferir</label>
+                            <input type="number" id="form12" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="container containerDataWallet p-4">
+                        <p class="m-0">Transferir a</p>
+                        <h3 class="p-0" style="font-weight: bold;">Mi Universal Wallet</h3>
+                        <div class="container pt-2">
+                            <h5>CUIL:</h5>
+                            <h5>Propetario:</h5>
+                            <h5>CVU:</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="containerFooter ">
+                    <app-button-common [props]="propsBtn[2]"></app-button-common>
+                    <br>
+                    <app-button-common class="p-0" [props]="propsBtn[3]"></app-button-common>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

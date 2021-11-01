@@ -33,6 +33,6 @@ export class LoginComponent implements OnInit {
 
 
   onSubmitForm() {
-    this.router.navigate(['/profile']);
+    this.router.navigate(['profile']);
   }
 }
