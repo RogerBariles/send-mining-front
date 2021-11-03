@@ -1,11 +1,13 @@
 .contentPadre {
     background-color: #F6F6F6;
+    padding-top: 3px;
 }
 
 .contentDataPerfil {
     background-color: white;
     max-width: 1000px;
     margin-top: 20px;
+    padding: 10px;
 }
 
 .containerBalancesGanancias {
@@ -86,6 +88,10 @@
             font-weight: bolder;
         }
     }
+}
+
+.btnModal {
+    display: none;
 }
 
 

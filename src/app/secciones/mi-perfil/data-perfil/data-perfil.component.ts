@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { PropsBtn } from 'src/app/commons-components/button-common/button-common.component';
 import { NavbarComponent, Props } from 'src/app/commons-components/navbar/navbar.component';
 import { MisBalances } from 'src/app/models/mis-balances';
@@ -11,33 +11,46 @@ import { UpdateImageFondo } from 'src/app/services/update-image-fondo.service';
 })
 export class DataPerfilComponent implements OnInit {
 
-  propsNavbar: Props[] = [
-    {
-      text: 'Cambiar plan',
-      class: 'col p-0',
-      route: ''
-    }
-  ];
+  @ViewChild('btnCloseModal', { static: true }) btnCloseModal: ElementRef;
+  @ViewChild('btnModal', { static: true }) btnModal: ElementRef;
+
+  propsNavbar: Props = {
+    theamWhite: true,
+    navigation: [
+      {
+        text: 'Cambiar plan',
+        route: ''
+      },
+      {
+        text: 'notifications.svg',
+        route: ''
+      },
+      {
+        text: 'perfil.svg',
+        route: ''
+      }
+    ]
+  };
 
   propsBtn: PropsBtn[] = [
     {
       text: 'CONTRATAR PLAN',
-      funcion: null,
+      funcion: () => { this.contratarPlan() },
       isInvert: false
     },
     {
       text: 'CONTRATAR PLAN',
-      funcion: null,
+      funcion: () => { this.contratarPlan() },
       isInvert: false
     },
     {
       text: 'TRANSFERIR',
-      funcion: null,
+      funcion: () => { this.transferir() },
       isInvert: false
     },
     {
       text: 'CANCELAR',
-      funcion: null,
+      funcion: () => { this.cancelar('cerrarModal') },
       isInvert: true
     }
   ];
@@ -49,12 +62,12 @@ export class DataPerfilComponent implements OnInit {
       buttons: [
         {
           text: 'TRANSFERIR',
-          funcion: null,
+          funcion: () => { this.transferir() },
           isInvert: false
         },
         {
           text: 'CONTRATAR PLAN',
-          funcion: null,
+          funcion: () => { this.contratarPlan() },
           isInvert: true
         }
       ]
@@ -65,7 +78,7 @@ export class DataPerfilComponent implements OnInit {
       buttons: [
         {
           text: 'TRANSFERIR',
-          funcion: null,
+          funcion: () => { this.transferir() },
           isInvert: false
         }
       ]
@@ -76,7 +89,7 @@ export class DataPerfilComponent implements OnInit {
       buttons: [
         {
           text: 'TRANSFERIR',
-          funcion: null,
+          funcion: () => { this.transferir() },
           isInvert: false
         }
       ]
@@ -94,4 +107,22 @@ export class DataPerfilComponent implements OnInit {
 
   }
 
+  clickButtonGeneric(event: Function): void {
+    // LLAMAMOS A LA FUNCION CORRESPONDIENTE AL BOTTON
+    event.call(event);
+  }
+
+  transferir(): void {
+    this.btnModal.nativeElement.click();
+  }
+
+  contratarPlan(): void {
+    debugger
+  }
+
+  cancelar(event: string): void {
+    if (event == 'cerrarModal') {
+      this.btnCloseModal.nativeElement.click();
+    }
+  }
 }

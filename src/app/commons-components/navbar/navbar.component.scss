@@ -6,12 +6,8 @@
 }
 
 .containerNavbarDescktop {
-    padding-top: 30px;
+    padding: 30px 40px 0 40px;
     position: relative;
-}
-
-.containerNavbarMobile {
-    display: none;
 }
 
 .contentNavbar {
@@ -30,26 +26,46 @@
     font: normal normal medium 14px/18px Montserrat;
     letter-spacing: -0.56px;
     color: white;
-    padding: 0;
-    padding-top: 20px;
+}
+
+.theamBlack {
+    background-color: none;
+    color: black;
+}
+
+.theamWhite {
+    background-color: white;
+    
+    .nav-link  {
+        color: black;
+    }
+}
+
+.items-navbar {
+    margin-right: 30px;
 }
 
 @media (max-width:570px) {
+
     .containerNavbarDescktop {
-        display: none;
+        padding: 30px 10px 0 10px;
+    }
+    
+}
+
+@media (max-width:370px) {
+
+    .items-navbar {
+        margin-right: 8px;
+        padding: 0 !important;
+    }
+    
+
+    .iconSendMinig {
+        margin-left: 5px;
     }
 
-    .containerNavbarMobile {
-        display: block;
-        // position: relative;
-        padding-top: 25px;
-        font-size: 15px;
-        text-align: center;
-        background-color: white;
+    .containerNavbarDescktop {
+        padding: 30px 10px 0 10px;
     }
-    
-    .imagenFondo {
-        // height: 120vh !important;
-    }
-    
 }
