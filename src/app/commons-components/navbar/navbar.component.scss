@@ -45,9 +45,6 @@
     margin-right: 30px;
 }
 
-.iconSendMinig {
-}
-
 @media (max-width:570px) {
 
     .containerNavbarDescktop {
@@ -60,6 +57,7 @@
 
     .items-navbar {
         margin-right: 8px;
+        padding: 0 !important;
     }
     
 

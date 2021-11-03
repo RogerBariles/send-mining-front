@@ -1,14 +1,18 @@
+
 .isDesktop {
-    display: flexbox;
-    padding-top: 10%;
+    // display: flexbox;
+    width: 90%;
+    padding: 10% 0;
 }
 
 .isMobile {
     display: none;
 }
 
-.containerPadre {
+.contentPadrePlanes {
     color: white;
+    margin-top: 130px;
+    padding: 0%;
 }
 
 .elegi {
@@ -39,6 +43,7 @@
 }
 
 .containerPlans {
+    margin-top: 40px;
     backdrop-filter: blur(15px);
     background-color: rgb(255 255 255 / 10%);
     height: 100%;
@@ -47,7 +52,7 @@
 .containerPlanIndividual {
     max-width: 240px;
     padding: 0 10%;
-    margin-top: -60px;
+    margin-top: -40px;
 
     .imagePlan {
         width: 150px;
@@ -80,6 +85,17 @@
 
 // IS TABLET
 @media (max-width: 1300px) {
+    .isDesktop {
+        display: none;
+        padding: 10px 0;
+    }
+
+    .isMobile {
+        display: inline;
+        padding: 50px 0;
+    }
+    
+
     .elegi {
         font-size: 60px;
     }
@@ -93,7 +109,8 @@
     }
 
     .containerPlanIndividual {
-
+        margin-top: 0;
+        
         .logoPlanes {
             width: 50px;
             height: 50px;
@@ -119,18 +136,16 @@
         }
     }
 
-    .containerPlanIndividual:hover {
-
-        transform: scale(1.05);
-        backdrop-filter: blur(15px);
-        padding: 30px;
+    #carouselExampleControls {
+        position: relative;
+        top: -15px;
     }
-
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
     // EFECTO SOLO DESKTOP
     .containerPlanIndividual:hover {
+        position: absolute;
 
         .logoPlanes {
             background-color: #00A1D9;
@@ -139,28 +154,44 @@
             margin-bottom: 10px;
         }
 
-        transform: scale(1.15);
+        transform: scale(1.05);
         backdrop-filter: blur(15px);
         box-shadow: inset 0 0 5px 7px #00A1D9;
         border-radius: 10px;
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding: 40px 30px;
+        text-align: left;
+        top: -70px;
     }
-}
 
+    .isDesktop {
+        padding: 10px ;
+    }
+
+    .contactanos {
+        margin-top: 0;
+    }
+
+    
+    
+}
 
 // IS MOBILE
 @media (max-width: 600px) {
+    .contentPadrePlanes {
+        margin-top: 50px;
+    }
     .isDesktop {
         display: none;
+        padding: 10px 0;
     }
 
     .isMobile {
         display: inline;
     }
+    
 
     .containerPadre {
-        margin-top: 5%;
+        margin: 5% 0 0 0;
         height: 100% !important;
     }
 
@@ -197,7 +228,6 @@
     }
 
     .containerPlans {
-        margin-top: 50px;
         max-height: 360px;
     }
 
@@ -210,11 +240,6 @@
 
     .containerPlanIndividual {
         pointer-events: none;
-    }
-
-    #carouselExampleControls {
-        position: relative;
-        top: -35px;
     }
 
 }
