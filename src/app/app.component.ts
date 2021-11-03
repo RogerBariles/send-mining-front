@@ -15,23 +15,24 @@ export class AppComponent implements OnInit, AfterContentChecked {
   basePathImage: string = '../../../assets/images/';
   pathImage: string;
 
-  propsNavbar: Props[] = [
+  propsNavbar: Props =
     {
-      text: 'Home',
-      class: 'col p-0',
-      route: ''
-    },
-    {
-      text: 'Universal Coins',
-      class: '',
-      route: 'https://www.universalcoins.net/'
-    },
-    {
-      text: 'Login',
-      class: '',
-      route: 'auth'
-    }
-  ];
+      theamWhite: false,
+      navigation: [
+        {
+          text: 'Home',
+          route: ''
+        },
+        {
+          text: 'Universal Coins',
+          route: 'https://www.universalcoins.net/'
+        },
+        {
+          text: 'Login',
+          route: 'auth'
+        }
+      ]
+    };
 
   constructor(
     private updateImageFondo: UpdateImageFondo,

@@ -1,8 +1,8 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 export interface PropsBtn {
   text: string,
-  funcion: any,
+  funcion: () => void,
   isInvert: boolean
 }
 
@@ -14,10 +14,15 @@ export interface PropsBtn {
 export class ButtonCommonComponent implements OnInit {
 
   @Input() props: PropsBtn;
+  @Output() clickProps = new EventEmitter<any>();
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  clickButton() {
+    this.clickProps.emit(this.props.funcion);
   }
 
 }

@@ -1,4 +1,4 @@
-<div class="container-fluid contentPadre vh-100">
+<div class="container-fluid contentPadre">
 
     <div class="container contentDataPerfil">
         <div class="row">
@@ -15,8 +15,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-4 d-flex align-items-center">
-                <app-button-common [props]="propsBtn[0]"></app-button-common>
+            <div class="col-12 col-md-4 text-center my-auto">
+                <app-button-common [props]="propsBtn[0]" (clickProps)="clickButtonGeneric($event)"></app-button-common>
             </div>
 
         </div>
@@ -36,7 +36,7 @@
                         <div class="container ">
                             <div class="row ">
                                 <app-button-common class="col p-0 d-flex justify-content-end"
-                                    *ngFor="let unButton of balance.buttons" [props]="unButton"></app-button-common>
+                                    *ngFor="let unButton of balance.buttons" [props]="unButton" (clickProps)="clickButtonGeneric($event)"></app-button-common>
                             </div>
                         </div>
                     </div>
@@ -51,7 +51,7 @@
                             <div class="col containerHistorialGanancias text-center">
                                 <img src="../../../../assets/images/logos/error.svg" width="150">
                                 <h4 class="pt-2" style="color: #DCDCDC;">A&uacute;n no generaste ganancias</h4>
-                                <app-button-common class=" p-0" [props]="propsBtn[1]"></app-button-common>
+                                <app-button-common class=" p-0" [props]="propsBtn[1]" (clickProps)="clickButtonGeneric($event)"></app-button-common>
                             </div>
                         </div>
                     </div>
@@ -61,8 +61,7 @@
     </div>
 </div>
 
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    Launch static backdrop modal
+<button #btnModal type="button" class=" btnModal btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
 </button>
 
 <!-- Modal -->
@@ -72,7 +71,7 @@
         <div class="modal-content">
             <div class="modal-header pt-3">
                 <h5 class="modal-title" id="staticBackdropLabel">Transferir</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button #btnCloseModal type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body position-relative">
                 <div class="container">
@@ -119,9 +118,9 @@
                 </div>
 
                 <div class="containerFooter ">
-                    <app-button-common [props]="propsBtn[2]"></app-button-common>
+                    <app-button-common [props]="propsBtn[2]" (clickProps)="clickButtonGeneric($event)"></app-button-common>
                     <br>
-                    <app-button-common class="p-0" [props]="propsBtn[3]"></app-button-common>
+                    <app-button-common class="p-0" [props]="propsBtn[3]" (clickProps)="clickButtonGeneric($event)"></app-button-common>
                 </div>
             </div>
         </div>

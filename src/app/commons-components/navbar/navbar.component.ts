@@ -3,11 +3,15 @@ import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { BehaviorSubject, Subscription } from 'rxjs';
 
 export interface Props {
-    text: string,
-    class: string,
-    route: string
+    theamWhite: boolean,
+    navigation: Navigation[]
 };
 
+export interface Navigation {
+    text: string,
+    isImagen?: boolean
+    route: string
+}
 @Component({
     selector: 'navbar-common',
     templateUrl: 'navbar.component.html',
@@ -16,11 +20,12 @@ export interface Props {
 
 export class NavbarComponent implements OnInit, OnDestroy {
 
-    props: Props[] = [];
+    baseImagenLogos: string = "../../../assets/images/logos/";
+    props: Props;
 
     // update titles
     subscripcion: Subscription;
-    public static subject: BehaviorSubject<Props[]>;
+    public static subject: BehaviorSubject<Props>;
 
     constructor() {
         NavbarComponent.subject = new BehaviorSubject(this.props);
@@ -34,6 +39,14 @@ export class NavbarComponent implements OnInit, OnDestroy {
     subscribeProps(): void {
         this.subscripcion = NavbarComponent.subject.subscribe(updateProps => {
             this.props = updateProps;
+            let expreReg = new RegExp('(.svg|.png|.jpg)')
+
+            this.props.navigation.forEach(unaNavegacion => {
+                if (expreReg.test(unaNavegacion.text)) {
+                    unaNavegacion.isImagen = true;
+                    unaNavegacion.text = this.baseImagenLogos.concat(unaNavegacion.text);
+                }
+            })
         });
     };
 
