@@ -1,8 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 .imagenFondo {
-    // height: 100vh;
-    // width: 100%;
-    // position: relative;
+    overflow-x: hidden !important;
     background-size: cover;
 }
 
@@ -16,4 +14,8 @@
         background-position-x: -180px;
     }
     
+}
+
+@media (max-width:400px) {
+  
 }

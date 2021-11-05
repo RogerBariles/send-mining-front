@@ -61,11 +61,9 @@
 }
 
 .containerTextCenter {
-    // margin-top: 10%;
+    padding-left:40px;
     color: white;
-    // position: relative;
     z-index: 1000;
-    // font-family: 'Montserrat';
     font: normal normal bolder 72px/88px 'Montserrat';
     margin-top: 50px;
 }
@@ -85,10 +83,6 @@
 
 
 @media (max-width: 1220px) {
-    .titulo {
-        // margin-top: 10%;
-    }
-
     .itemPieLeft {
         padding-left: 80px;
     }
@@ -98,10 +92,11 @@
 @media (max-width: 370px) {
     .containerTextCenter {
         margin-top: 25px;
+        padding-left: 10px;
     }
 
     .titulo {
-        margin-left: 2%;
+        margin-left: 20px;
     }
 }
 
@@ -122,7 +117,7 @@
         margin: auto 0;
         font-size: 13px;
         text-align: left;
-        padding-left: 15px;
+        padding-left: 45px;
     }
 
     .btnVerPlanes {
@@ -130,7 +125,6 @@
     }
 
     .containerTextCenter {
-        // margin-top: 5%;
 
         .fs-100 {
             font-size: 60px;

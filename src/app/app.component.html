@@ -1,6 +1,10 @@
-<div #contentImage class="container-fluid p-0 imagenFondo ">
-    <navbar-common></navbar-common>
-    <!-- <div style="overflow: auto !important; height: 100%;">
-    </div> -->
-    <router-outlet ></router-outlet>
+
+<div #contentImage class="p-0 imagenFondo">
+  <navbar-common></navbar-common>
+
+  <div class="row p-0">
+    <div class="col-12 vh-100 p-0" style="position: relative;">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>
