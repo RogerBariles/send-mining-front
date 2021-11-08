@@ -38,15 +38,17 @@ export class NavbarComponent implements OnInit, OnDestroy {
     // SUBSCRIPCION A PROPS
     subscribeProps(): void {
         this.subscripcion = NavbarComponent.subject.subscribe(updateProps => {
-            this.props = updateProps;
-            let expreReg = new RegExp('(.svg|.png|.jpg)')
+            if (updateProps) {
+                this.props = updateProps;
+                let expreReg = new RegExp('(.svg|.png|.jpg)')
 
-            this.props.navigation.forEach(unaNavegacion => {
-                if (expreReg.test(unaNavegacion.text)) {
-                    unaNavegacion.isImagen = true;
-                    unaNavegacion.text = this.baseImagenLogos.concat(unaNavegacion.text);
-                }
-            })
+                this.props.navigation.forEach(unaNavegacion => {
+                    if (expreReg.test(unaNavegacion.text)) {
+                        unaNavegacion.isImagen = true;
+                        unaNavegacion.text = this.baseImagenLogos.concat(unaNavegacion.text);
+                    }
+                })
+            }
         });
     };
 

@@ -1,6 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { PropsBtn } from 'src/app/commons-components/button-common/button-common.component';
-import { NavbarComponent, Props } from 'src/app/commons-components/navbar/navbar.component';
 import { MisBalances } from 'src/app/models/mis-balances';
 import { UpdateImageFondo } from 'src/app/services/update-image-fondo.service';
 
@@ -14,23 +13,7 @@ export class DataPerfilComponent implements OnInit {
   @ViewChild('btnCloseModal', { static: true }) btnCloseModal: ElementRef;
   @ViewChild('btnModal', { static: true }) btnModal: ElementRef;
 
-  propsNavbar: Props = {
-    theamWhite: true,
-    navigation: [
-      {
-        text: 'Cambiar plan',
-        route: ''
-      },
-      {
-        text: 'notifications.svg',
-        route: ''
-      },
-      {
-        text: 'perfil.svg',
-        route: ''
-      }
-    ]
-  };
+
 
   propsBtn: PropsBtn[] = [
     {
@@ -103,8 +86,6 @@ export class DataPerfilComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    NavbarComponent.subject.next(this.propsNavbar);
-
   }
 
   clickButtonGeneric(event: Function): void {
