@@ -20,5 +20,17 @@
         font-size: 14px;
         color: #47D9BF;
         border-radius: 20px;
+        border-color: white;
     }
 }
+
+ @media (max-width:400px) {
+
+    .containerBtn {
+        width: 100%  !important;
+
+        .btn {
+            width: 100%  !important;
+        }
+    }
+ }

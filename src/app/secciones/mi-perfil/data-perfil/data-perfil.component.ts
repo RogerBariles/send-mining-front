@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import { PropsBtn } from 'src/app/commons-components/button-common/button-common.component';
 import { MisBalances } from 'src/app/models/mis-balances';
 import { UpdateImageFondo } from 'src/app/services/update-image-fondo.service';
@@ -80,7 +81,8 @@ export class DataPerfilComponent implements OnInit {
   ];
 
   constructor(
-    private updateImageFonto: UpdateImageFondo
+    private updateImageFonto: UpdateImageFondo,
+    private router: Router
   ) {
     this.updateImageFonto.subject.next('');
   }
@@ -98,7 +100,7 @@ export class DataPerfilComponent implements OnInit {
   }
 
   contratarPlan(): void {
-    debugger
+    this.router.navigate(['profile/contratar-plan']);
   }
 
   cancelar(event: string): void {

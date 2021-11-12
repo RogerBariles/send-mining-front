@@ -1,0 +1,102 @@
+<div class="container-fluid contentPadre">
+
+    <div class="container">
+        <h3 class="pb-3 pt-3">Detalles de nuestros Packs Mining</h3>
+        <div class="row">
+            <div class="col-12 col-md-3 isDesktop">
+                <div class="containerDetallesPlanes">
+                    <p>Velocidad de Minado</p>
+                    <hr>
+                    <p>Retroalimentaci&oacute;n</p>
+                    <hr>
+                    <p>Asistencia 24hs</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 p-1" *ngFor="let plan of planes">
+                <div class="container containerPlan">
+                    <h4>{{plan?.title}}</h4>
+                    <div class="d-flex justify-content-between isMobile">
+                        <div>Velocidad de Minado</div>
+                        {{plan?.velocidad}}
+                    </div>
+                    <p class="isDesktop">{{plan?.velocidad}}</p>
+                    <hr>
+                    <div class="d-flex justify-content-between isMobile">
+                        <div>Retroalimentaci&oacute;n</div>
+                        {{plan?.feedback}}
+                    </div>
+                    <p class="isDesktop">{{plan?.feedback}}</p>
+                    <hr>
+                    <div class="d-flex justify-content-between isMobile">
+                        <div>Asistencia 24hs</div>
+                        {{plan?.asistencia}}
+                    </div>
+                    <p class="isDesktop">{{plan?.asistencia}}</p>
+
+                    <div class="containerBtnsPlanes">
+                        <div *ngFor="let btn of plan.btnProps">
+                            <app-button-common [props]="btn" (clickProps)="clickButtonGeneric($event)">
+                            </app-button-common>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container containerDetalles">
+        DETALLES MAS
+    </div>
+
+</div>
+
+<button #btnModal type="button" class=" btnModal btn btn-primary" data-bs-toggle="modal"
+    data-bs-target="#staticBackdrop">
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header pt-3">
+                <h5 class="modal-title" id="staticBackdropLabel">Contratar plan</h5>
+                <button #btnCloseModal type="button" class="btn-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body position-relative">
+                <div class="container">
+
+                    <div class="containerTitle">
+                        Est&aacute;s a un click de cambiar tu mundo financiero
+                    </div>
+
+                    <div class="container containerDataWallet p-4 mt-3 mb-3">
+                        <p class="m-0">Saldo actual</p>
+                        <h3 class="pt-1" style="font-weight: bold;">500 USD</h3>
+                    </div>
+
+                    <div class="container containerDataWallet p-4">
+                        <p class="m-0">Resumen de Pago</p>
+                        <h3 class="pt-1" style="font-weight: bold;">Pack ...</h3>
+                        <div class="container pt-2">
+                            <h5>Fecha de inicio</h5>
+                            <h5>Fecha de vencimiento</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row containerFooter">
+                    <div class="col-12">
+                        <app-button-common [props]="propsBtn[0]" (clickProps)="clickButtonGeneric($event)">
+                        </app-button-common>
+                    </div>
+                    <div class="col-12">
+                        <app-button-common class="p-0" [props]="propsBtn[1]" (clickProps)="clickButtonGeneric($event)">
+                        </app-button-common>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

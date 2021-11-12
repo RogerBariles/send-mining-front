@@ -33,10 +33,11 @@
                             <p class="m-0 pt-2">{{balance.type}}</p>
                             <h3>{{balance.monto}}</h3>
                         </div>
-                        <div class="container ">
-                            <div class="row ">
+                        <div class="container px-0 py-1">
+                            <div class="row containerBtns">
                                 <app-button-common class="col p-0 d-flex justify-content-end"
-                                    *ngFor="let unButton of balance.buttons" [props]="unButton" (clickProps)="clickButtonGeneric($event)"></app-button-common>
+                                    *ngFor="let unButton of balance.buttons" [props]="unButton"
+                                    (clickProps)="clickButtonGeneric($event)"></app-button-common>
                             </div>
                         </div>
                     </div>
@@ -51,7 +52,8 @@
                             <div class="col containerHistorialGanancias text-center">
                                 <img src="../../../../assets/images/logos/error.svg" width="150">
                                 <h4 class="pt-2" style="color: #DCDCDC;">A&uacute;n no generaste ganancias</h4>
-                                <app-button-common class=" p-0" [props]="propsBtn[1]" (clickProps)="clickButtonGeneric($event)"></app-button-common>
+                                <app-button-common class=" p-0" [props]="propsBtn[1]"
+                                    (clickProps)="clickButtonGeneric($event)"></app-button-common>
                             </div>
                         </div>
                     </div>
@@ -59,9 +61,13 @@
             </div>
         </div>
     </div>
+
 </div>
 
-<button #btnModal type="button" class=" btnModal btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+
+
+<button #btnModal type="button" class=" btnModal btn btn-primary" data-bs-toggle="modal"
+    data-bs-target="#staticBackdrop">
 </button>
 
 <!-- Modal -->
@@ -71,7 +77,8 @@
         <div class="modal-content">
             <div class="modal-header pt-3">
                 <h5 class="modal-title" id="staticBackdropLabel">Transferir</h5>
-                <button #btnCloseModal type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button #btnCloseModal type="button" class="btn-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
             </div>
             <div class="modal-body position-relative">
                 <div class="container">
@@ -106,21 +113,35 @@
                         </div>
                     </div>
 
-                    <div class="container containerDataWallet p-4">
+                    <div class="container containerDataWallet p-40ox">
                         <p class="m-0">Transferir a</p>
                         <h3 class="p-0" style="font-weight: bold;">Mi Universal Wallet</h3>
-                        <div class="container pt-2">
-                            <h5>CUIL:</h5>
-                            <h5>Propetario:</h5>
-                            <h5>CVU:</h5>
+                        <div class="container-fluid p-0 pb-4 pt-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <div>CUIL:</div>
+                                21-0000000-7
+                            </div>
+                            <div class="d-flex justify-content-between mb-1">
+                                <div>Propetario:</div>
+                                Pepe gonzales
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>CVU:</div>
+                                121231321321321321
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="containerFooter ">
-                    <app-button-common [props]="propsBtn[2]" (clickProps)="clickButtonGeneric($event)"></app-button-common>
-                    <br>
-                    <app-button-common class="p-0" [props]="propsBtn[3]" (clickProps)="clickButtonGeneric($event)"></app-button-common>
+                <div class="row containerFooter">
+                    <div class="col-12">
+                        <app-button-common [props]="propsBtn[2]" (clickProps)="clickButtonGeneric($event)">
+                        </app-button-common>
+                    </div>
+                    <div class="col-12">
+                        <app-button-common class="p-0" [props]="propsBtn[3]" (clickProps)="clickButtonGeneric($event)">
+                        </app-button-common>
+                    </div>
                 </div>
             </div>
         </div>
