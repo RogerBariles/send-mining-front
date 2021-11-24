@@ -91,6 +91,56 @@
     }
 }
 
+.modal-dialog-not-modal {
+    background-color: white;
+    margin: 0 10px;
+
+    .modal-header {
+        border-bottom: none;
+    }
+
+    .modal-title {
+        color: #37414080;
+        font-size: 18px;
+    }
+
+    .modal-body {
+
+        font-family: 'Montserrat';
+        .btn-group {
+            font-weight: bold;
+        }
+
+        .containerTitle{
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .btnDesplegable {
+            background-color: white;
+            border-color: white;
+            color: black;
+        }
+
+        .containerFooter {
+            padding-top: 20%;
+        }
+
+        .containerDataWallet {
+            background-color: #F6F6F6;
+        }
+
+        .conteinerSelectCripto {
+            margin: 40px auto;
+        }
+
+        .textBitcoin {
+            margin: auto 15px;
+            font-weight: bolder;
+        }
+    }
+}
+
 .btnModal {
     display: none;
 }

@@ -1,4 +1,4 @@
-<div class="container-fluid contentPadre">
+<div class="container-fluid contentPadre" *ngIf="!isMobileModal">
 
     <div class="container contentDataPerfil">
         <div class="row">
@@ -64,7 +64,82 @@
 
 </div>
 
+<!-- Modal isMobie-->
 
+<div class="" *ngIf="isMobileModal">
+    <div class="modal-dialog-not-modal">
+        <div class="modal-content">
+            <div class="modal-header pt-3">
+                <h5 class="modal-title" id="staticBackdropLabel">Transferir</h5>
+                <button #btnCloseModal type="button" class="btn-close" (click)="closeNotModal()"></button>
+            </div>
+            <div class="modal-body position-relative">
+                <div class="container">
+
+                    <div class="containerTitle">
+                        Transfer&iacute; tus criptos a tu<br>
+                        Universal Wallet para operar
+                    </div>
+
+                    <div class="container text-center conteinerSelectCripto">
+                        <div class="btn-group ">
+                            <h3 class="my-auto textBitcoin">BTC</h3>
+                            <button type="button"
+                                class="btn btn-secondary dropdown-toggle dropdown-toggle-split btnDesplegable"
+                                id="dropdownMenuReference" data-bs-toggle="dropdown" aria-expanded="false"
+                                data-bs-reference="parent">
+                                <span class="visually-hidden">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="container containerInput pb-3">
+
+                        <div class="form-outline">
+                            <label class="form-label" for="form12">Transferir</label>
+                            <input type="number" id="form12" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="container containerDataWallet p-40ox">
+                        <p class="m-0">Transferir a</p>
+                        <h3 class="p-0" style="font-weight: bold;">Mi Universal Wallet</h3>
+                        <div class="container-fluid p-0 pb-4 pt-3">
+                            <div class="d-flex justify-content-between mb-1">
+                                <div>CUIL:</div>
+                                21-0000000-7
+                            </div>
+                            <div class="d-flex justify-content-between mb-1">
+                                <div>Propetario:</div>
+                                Pepe gonzales
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>CVU:</div>
+                                121231321321321321
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row containerFooter">
+                    <div class="col-12">
+                        <app-button-common [props]="propsBtn[2]" (clickProps)="clickButtonGeneric($event)">
+                        </app-button-common>
+                    </div>
+                    <div class="col-12">
+                        <app-button-common class="p-0" [props]="propsBtn[3]" (clickProps)="clickButtonGeneric($event)">
+                        </app-button-common>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <button #btnModal type="button" class=" btnModal btn btn-primary" data-bs-toggle="modal"
     data-bs-target="#staticBackdrop">

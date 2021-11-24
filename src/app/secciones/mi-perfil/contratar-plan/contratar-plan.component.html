@@ -1,6 +1,6 @@
 <div class="container-fluid contentPadre">
 
-    <div class="container">
+    <div class="container" *ngIf="!isMobileModal">
         <h3 class="pb-3 pt-3">Detalles de nuestros Packs Mining</h3>
         <div class="row">
             <div class="col-12 col-md-3 isDesktop">
@@ -44,11 +44,66 @@
         </div>
     </div>
 
-    <div class="container containerDetalles">
+    <div class="container containerDetalles" *ngIf="!isMobileModal">
         DETALLES MAS
     </div>
 
+
+    <div class="text-center" *ngIf="isMobileModal">
+        <div class="modal-dialog-notModal">
+            <div class="modal-content">
+                <div class="modal-header pt-3">
+                    <h5 class="modal-title" id="staticBackdropLabel">Contratar plan</h5>
+                    <button #btnCloseModal type="button" class="btn-close" (click)="closeNotModal()">
+                    </button>
+                </div>
+                <div class="modal-body position-relative">
+                    <div class="container">
+
+                        <div class="containerTitle">
+                            Est&aacute;s a un click de cambiar tu mundo financiero
+                        </div>
+
+                        <div class="container containerDataWallet p-3 mt-3 mb-3">
+                            <p class="m-0">Saldo actual</p>
+                            <h3 class="pt-1" style="font-weight: bold;">500 USD</h3>
+                        </div>
+
+                        <div class="contaner containerDataWallet p-2">
+                            <p class="m-0">Resumen de Pago</p>
+                            <h3 class="pt-1" style="font-weight: bold;">Pack ...</h3>
+                            <div class=" pt-2">
+                                <div class="d-flex justify-content-between">
+                                    <div>Fecha de inicio</div>
+                                    13/10/2021
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div>Fecha de vencimiento</div>
+                                    13/10/2021
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row containerFooter">
+                        <div class="col-12">
+                            <app-button-common [props]="propsBtn[0]" (clickProps)="clickButtonGeneric($event)">
+                            </app-button-common>
+                        </div>
+                        <div class="col-12">
+                            <app-button-common class="p-0" [props]="propsBtn[1]"
+                                (clickProps)="clickButtonGeneric($event)">
+                            </app-button-common>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+
+
 
 <button #btnModal type="button" class=" btnModal btn btn-primary" data-bs-toggle="modal"
     data-bs-target="#staticBackdrop">

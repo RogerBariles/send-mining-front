@@ -12,6 +12,8 @@ export class ContratarPlanComponent implements OnInit {
   @ViewChild('btnCloseModal', { static: true }) btnCloseModal: ElementRef;
   @ViewChild('btnModal', { static: true }) btnModal: ElementRef;
 
+  isMobileModal: boolean;
+
   planes = [
     {
       title: 'SINGLE',
@@ -84,7 +86,9 @@ export class ContratarPlanComponent implements OnInit {
 
   constructor(
     private updateImageFonto: UpdateImageFondo
-  ) { }
+  ) {
+    this.isMobileModal = false;
+  }
 
   ngOnInit(): void {
     this.updateImageFonto.subject.next('');
@@ -96,13 +100,29 @@ export class ContratarPlanComponent implements OnInit {
   }
 
   cancelar(event: string): void {
+    if (this.isMobileModal) {
+      this.isMobileModal = false;
+      return;
+    }
+
     if (event == 'cerrarModal') {
       this.btnCloseModal.nativeElement.click();
     }
   };
 
   seleccionarBtn(): void {
+
+    let widthWindows = window.innerWidth;
+
+    if (widthWindows < 680) {
+      this.isMobileModal = true;
+      return;
+    }
     this.btnModal.nativeElement.click();
+  };
+
+  closeNotModal(): void {
+    this.isMobileModal = false;
   };
 
 }

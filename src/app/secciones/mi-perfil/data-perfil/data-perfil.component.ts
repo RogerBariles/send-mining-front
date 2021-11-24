@@ -14,7 +14,7 @@ export class DataPerfilComponent implements OnInit {
   @ViewChild('btnCloseModal', { static: true }) btnCloseModal: ElementRef;
   @ViewChild('btnModal', { static: true }) btnModal: ElementRef;
 
-
+  isMobileModal: boolean;
 
   propsBtn: PropsBtn[] = [
     {
@@ -85,6 +85,7 @@ export class DataPerfilComponent implements OnInit {
     private router: Router
   ) {
     this.updateImageFonto.subject.next('');
+    this.isMobileModal = false;
   }
 
   ngOnInit(): void {
@@ -96,6 +97,13 @@ export class DataPerfilComponent implements OnInit {
   }
 
   transferir(): void {
+    let widthWindows = window.innerWidth;
+
+    if (widthWindows < 680) {
+      this.isMobileModal = true;
+      return;
+    }
+
     this.btnModal.nativeElement.click();
   }
 
@@ -104,8 +112,17 @@ export class DataPerfilComponent implements OnInit {
   }
 
   cancelar(event: string): void {
+    if (this.isMobileModal) {
+      this.isMobileModal = false;
+    }
+
     if (event == 'cerrarModal') {
       this.btnCloseModal.nativeElement.click();
     }
-  }
+  };
+
+  closeNotModal(): void {
+    this.isMobileModal = false;
+  };
+
 }
